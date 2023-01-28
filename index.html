@@ -4,62 +4,133 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a4547116b9.js"
+      crossorigin="anonymous"
+    ></script>
     <title>JROSA Portfolio</title>
   </head>
   <body>
     <!--navbar-->
     <nav>
-      <div class="Container">
-        <a class="navbar-brand" href="#"
-          ><img class="Logo" src="img/JROSALogo.png" height="100px"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#portfolioNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="portfolioNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                ><i class="fa fa-home fa-lg"></i> Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html"
-                ><i class="fa fa-info fa-lg"></i> Contact</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html"
-                ><i class="fa fa-list fa-lg"></i> Portfolio</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="getstart.html"
-                ><i class="fa fa-address-card fa-lg"></i> Get Started</a
-              >
-            </li>
-          </ul>
-          <span class="navbar-text ml-auto">
-            <a role="button" id="loginButton">
-              <i class="fa fa-sign-in">Login</i>
-            </a>
-          </span>
-        </div>
-      </div>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label><a class="logo" href="#">J</a></label>
+      <label> <a href="#" class="logo1">Rosa</a> </label>
+
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="hireme.html">Hire me</a></li>
+        <li><a href="login.html">Log in</a></li>
+      </ul>
     </nav>
 
     <!--  body Content -->
-    <h3>Hello, I am</h3>
-    <h1>James Rosa</h1>
-    <p>A young fullstack developer</p>
-    <img class="James" src="img/James.PNG" alt="James Headshot" />
-    <button>Hire Me</button>
-    <button>Portfolio</button>
+
+    <div class="container-one">
+      <h3 class="hello">Hello, I am</h3>
+      <h1 class="James-Rosa">James Rosa</h1>
+      <p class="p-text">Passionate fullstack developer</p>
+      <button class="btn btn-warning btn-lg">Hire Me</button>
+      <a href="#projects" class="btn btn-warning btn-lg" role="button"
+        >Projects</a
+      >
+    </div>
+    <!-- about me -->
+    <div class="container-about">
+      <div class="column">
+        <div class="about-me">
+          <!-- Column Here -->
+          <h3 class="about-me">About Me</h3>
+          <img src="/img/James.PNG" alt="" class="about-img" />
+        </div>
+        <!-- 2nd Column Here -->
+
+        <div class="column">
+          <p class="p-text-dark-about">
+            Hello! My name is James Rosa and I am a full stack developer with
+            experience in a variety of programming languages and technologies. I
+            have a passion for creating clean, efficient, and user-friendly web
+            applications. My skills include proficiency in front-end
+            technologies such as HTML, CSS, and JavaScript, as well as back-end
+            languages such as Python, NodeJS, and MongoDB.
+          </p>
+          <p class="p-text-dark-about">
+            I am also well-versed in various frameworks and libraries such as
+            React, Bootstrap. I have experience working with databases, both SQL
+            and NoSQL, and enjoy utilizing modern web development practices such
+            as responsive design and API development. I am always looking to
+            learn new technologies and improve my skills, and I am excited to
+            continue my journey in the ever-evolving world of web development.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- section 3 Projects -->
+    <div class="container-projects">
+      <h3 class="hello" id="projects">Projects</h3>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="row">
+        <div class="col-sm-4 col-md-2 offset-1">
+          <h5 style="color: white" class="footer-Links">Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" style="color: white">Home</a></li>
+            <li><a href="about.html" style="color: white">About</a></li>
+            <li><a href="hireme.html" style="color: white"> Hire me</a></li>
+            <li><a href="contact.html" style="color: white"> Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-sm-5 text-center">
+          <h5 style="color: white" class="footer-Links">Social</h5>
+          <a
+            class="btn btn-social-icon btn-github btn-warning"
+            href="https://github.com/JXROSA"
+            target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            class="btn btn-social-icon btn-instagram btn-warning"
+            href="http://instagram.com/"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a
+            class="btn btn-social-icon btn-facebook btn-warning"
+            href="http://facebook.com/"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a
+            class="btn btn-social-icon btn-twitter btn-warning"
+            href="http://twitter.com/"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a
+            class="btn btn-social-icon btn-google btn-warning"
+            href="http://youtube.com/"
+            ><i class="fa fa-youtube"></i
+          ></a>
+        </div>
+        <div class="col-sm-4">
+          <h5 style="color: white" class="footer-Links">Contact</h5>
+          <i class="fa fa-envelope fa-lg text-white"></i>
+          <a href="mailto:" style="color: white">rosajames10@yahoo.com.br</a>
+        </div>
+      </div>
+    </footer>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
